@@ -1,14 +1,18 @@
-@use "./styles" as *;
+@use "./variables" as *;
 
 .wrapper{
-    max-width:1320px;
+    max-width:1620px;
     margin:0 auto;
     width:70%
 }
-
+.wrappertwo{
+    max-width:1620px;
+    margin:0 auto;
+    width:80%
+}
 // GENERIC************************************************
 h2{
-    text-align:center;
+    text-align:left;
     text-transform:uppercase;
     font-size:$sub_heading_font_size;
     color:$primaryblack;
@@ -20,6 +24,7 @@ p{
     color:$primaryblack;
     line-height:$default_line_height;
     font-family:$body_font_family;
+    text-align:left;
 }
 .bodyanchor{
     display:inline-block;
@@ -34,19 +39,19 @@ p{
     padding:10px;
 }
 // NEWS SECTION********************************************
+.news h2{
+    text-align:center;
+    width:100%;
+}
 .newsgallery{
+    list-style-type: none; 
     display:flex;
     justify-content: space-around;
     align-items: center;
-    list-style-type: none;
     margin-bottom:50px;
-        // img{
-            // object-fit:contain;
-            // display:inline-block;
-            // aspect-ratio:1;
-            // height:300px;
-            // width:100%;
-        // }
+        img{
+            height:300px;
+        }
 }
 // HIGHLIGHTS SECTION*************************************
 .hightlight{
@@ -55,21 +60,85 @@ p{
     align-items: center;
     
     h2{
-        text-align:left;
         margin:0px;
     }
 }
 .highlightimg{
     width:20%;
 
-    img{
-        height:250px;
+    img{   
+        height:300px;
     }
 }
 .highlightright{
-    width:65%;
+    width:80%;
+    margin-left:50px;
+    margin-right: -260px;
 
     p{
         margin-top:10px;
+    }
+}
+// TRENDS & BEHIND SCENESSECTION**************************************
+.trends, .behindscenes{
+    margin-top:50px;
+    display:flex;
+    
+    img{
+        height:400px;
+    }
+}
+
+    h2, p{
+        width:80%;
+    }
+    h2{
+        margin-bottom:10px;
+    }
+.trendsleft, .behind_scenes_right{
+    margin-top:-50px;
+    margin-left:100px;
+}
+.behind_scenes_right{
+    display:flex;
+    flex-direction:column;
+}
+// AFFILIATES NAV BAR*****************************************
+.affiliates{
+    margin-top:0px;
+    background-image:url(../assets/image-1.jpg);
+    height:200px;
+
+    .affiliate_nav{
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+    }
+
+    img{
+        height:100px;
+        width:100px;
+        margin-top:40px;
+        filter:$white_icon_filter;
+    }
+
+    p{
+        text-decoration:none;
+        color:$primarywhite;
+        text-transform:uppercase;
+        text-decoration:none;
+        margin-top:0px;
+        width:100%;
+    }
+    .brands{
+        margin-left:15px;
+    }
+    .community{
+        margin-left:8px;
+    }
+    .events{
+        p{
+            margin-left:16px;
+        }
     }
 }

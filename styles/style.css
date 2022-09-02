@@ -292,13 +292,19 @@ h1 .titleone {
   }
 }
 .wrapper {
-  max-width: 1320px;
+  max-width: 1620px;
   margin: 0 auto;
   width: 70%;
 }
 
+.wrappertwo {
+  max-width: 1620px;
+  margin: 0 auto;
+  width: 80%;
+}
+
 h2 {
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   font-size: 2.45rem;
   color: #000000;
@@ -309,8 +315,9 @@ h2 {
 
 p {
   color: #000000;
-  line-height: 29px;
+  line-height: 1.45rem;
   font-family: "Roboto Flex", sans-serif;
+  text-align: left;
 }
 
 .bodyanchor {
@@ -319,26 +326,27 @@ p {
   background-color: rgba(24, 52, 154, 0.78);
   font-family: "Cormorant Garamond", serif;
   font-size: 0.9rem;
-  line-height: 29px;
+  line-height: 1.45rem;
   text-align: center;
   text-decoration: none;
   width: 150px;
   padding: 10px;
 }
 
+.news h2 {
+  text-align: center;
+  width: 100%;
+}
+
 .newsgallery {
+  list-style-type: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  list-style-type: none;
   margin-bottom: 50px;
 }
 .newsgallery img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: inline-block;
   height: 300px;
-  width: 100%;
 }
 
 .hightlight {
@@ -347,7 +355,6 @@ p {
   align-items: center;
 }
 .hightlight h2 {
-  text-align: left;
   margin: 0px;
 }
 
@@ -355,12 +362,74 @@ p {
   width: 20%;
 }
 .highlightimg img {
-  height: 250px;
+  height: 300px;
 }
 
 .highlightright {
-  width: 65%;
+  width: 80%;
+  margin-left: 50px;
+  margin-right: -260px;
 }
 .highlightright p {
   margin-top: 10px;
+}
+
+.trends, .behindscenes {
+  margin-top: 50px;
+  display: flex;
+}
+.trends img, .behindscenes img {
+  height: 400px;
+}
+
+h2, p {
+  width: 80%;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.trendsleft, .behind_scenes_right {
+  margin-top: -50px;
+  margin-left: 100px;
+}
+
+.behind_scenes_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.affiliates {
+  margin-top: 0px;
+  background-image: url(../assets/image-1.jpg);
+  height: 200px;
+}
+.affiliates .affiliate_nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.affiliates img {
+  height: 100px;
+  width: 100px;
+  margin-top: 40px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(242deg) brightness(109%) contrast(98%);
+}
+.affiliates p {
+  text-decoration: none;
+  color: #FCFCFC;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 0px;
+  width: 100%;
+}
+.affiliates .brands {
+  margin-left: 15px;
+}
+.affiliates .community {
+  margin-left: 8px;
+}
+.affiliates .events p {
+  margin-left: 16px;
 }/*# sourceMappingURL=style.css.map */
