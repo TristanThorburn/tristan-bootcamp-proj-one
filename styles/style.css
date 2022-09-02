@@ -294,13 +294,11 @@ h1 .titleone {
 .wrapper {
   max-width: 1620px;
   margin: 0 auto;
-  width: 70%;
+  width: 75%;
 }
 
 .wrappertwo {
-  max-width: 1620px;
-  margin: 0 auto;
-  width: 80%;
+  max-width: 1920px;
 }
 
 h2 {
@@ -340,35 +338,33 @@ p {
 
 .newsgallery {
   list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  padding: 0px;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 50px;
 }
 .newsgallery img {
-  height: 300px;
+  height: 450px;
 }
 
 .hightlight {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.hightlight img {
+  height: 350px;
 }
 .hightlight h2 {
   margin: 0px;
 }
 
-.highlightimg {
-  width: 20%;
-}
-.highlightimg img {
-  height: 300px;
-}
-
 .highlightright {
-  width: 80%;
+  grid-column: span 3;
   margin-left: 50px;
-  margin-right: -260px;
+}
+.highlightright h2, .highlightright p {
+  width: 100%;
 }
 .highlightright p {
   margin-top: 10px;
@@ -379,7 +375,7 @@ p {
   display: flex;
 }
 .trends img, .behindscenes img {
-  height: 400px;
+  height: 500px;
 }
 
 h2, p {
