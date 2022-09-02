@@ -1,4 +1,4 @@
-@use "./variables" as *;
+@use "./styles" as *;
 
 .wrapper{
     max-width:1320px;
@@ -10,7 +10,7 @@
 h2{
     text-align:center;
     text-transform:uppercase;
-    font-size:2.45rem;
+    font-size:$sub_heading_font_size;
     color:$primaryblack;
     font-weight: 600px;
     font-family:$titles_font_family;
@@ -18,7 +18,7 @@ h2{
 }
 p{
     color:$primaryblack;
-    line-height:29px;
+    line-height:$default_line_height;
     font-family:$body_font_family;
 }
 .bodyanchor{
@@ -26,8 +26,8 @@ p{
     color:$primarywhite;
     background-color:$body_anchor_color;
     font-family:$titles_font_family;
-    font-size:0.9rem;
-    line-height:29px;
+    font-size:$body_anchor_font_size;
+    line-height:$default_line_height;
     text-align:center;
     text-decoration:none;
     width:150px;
@@ -40,12 +40,13 @@ p{
     align-items: center;
     list-style-type: none;
     margin-bottom:50px;
-        img{
-            object-fit:contain;
-            display:inline-block;
-            height:300px;
-            width:100%;
-        }
+        // img{
+            // object-fit:contain;
+            // display:inline-block;
+            // aspect-ratio:1;
+            // height:300px;
+            // width:100%;
+        // }
 }
 // HIGHLIGHTS SECTION*************************************
 .hightlight{
