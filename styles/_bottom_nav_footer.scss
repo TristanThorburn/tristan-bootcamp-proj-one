@@ -1,0 +1,105 @@
+@use "./variables" as *;
+
+.wrapper{
+    max-width:1620px;
+    margin:0 auto;
+    width:75%
+}
+// BOTTOM FORMS / CONTACT / NAV ************************
+.lower_background{
+    background-color:$secondarygrey;
+    background-size:cover;
+    padding:20px 0px;
+    height:200px;
+    font-family:$body_font_family;
+    color:$primaryblack;
+
+    .lower_nav{
+        display:grid;
+        grid-template-columns:repeat(4, 1fr);
+    }
+}
+h3{
+    text-transform:uppercase;
+    font-family:$titles_font_family;
+    margin-bottom:5px;
+}
+form{
+    grid-column:span 2;
+    display:flex;
+
+    div{
+        flex-direction:column;
+        width:100%;
+    }
+
+    input{
+        margin-top:5px;
+        width:75%;
+        height: 2rem;
+    }
+}
+button{
+    background-color:$primaryblack;
+    color:$primarywhite;
+    height:2rem;
+    width:20%;
+    // padding:10px 20px;
+    line-height:$default_line_height;
+    font-size:$body_anchor_font_size;
+    font-family:$titles_font_family;
+    text-transform:uppercase;
+    text-align:center;
+    border:2px solid $primaryblack;
+}
+.contact{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-end;
+    width:100%;
+
+        span{
+            text-transform:uppercase;
+        }
+
+        h3, p{
+            margin:0px;
+            text-align:left;
+            width:80%;
+        }
+}
+.bottom_nav{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+        ul{
+            padding:0px;
+            display:inline-block;
+            text-align:right;
+            list-style-type:none;
+
+                a{
+                    text-decoration:none;
+                    text-transform:uppercase;
+                    color:$primaryblack;
+            }
+    }
+}
+// FOOTER***********************************************
+footer{
+    background-color:$primarygrey;
+    
+    p{
+        font-family:$body_font_family;
+        text-align:center;
+        font-size:$bottom_font_size;
+
+        a{
+            text-decoration:none;
+            color:$primaryblack;
+        }
+    }
+}

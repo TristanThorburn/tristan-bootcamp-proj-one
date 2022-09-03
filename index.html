@@ -17,15 +17,15 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header class="socials">
+    <header class="socials" id="home">
         <!-- NAV BAR -->
         <div class="desknavbar">
             <p>One</p>
             <ul class="headernav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <div class="mobilenavbar">
@@ -98,6 +98,35 @@
                 </div>
             </div>
         </section>
+        <section class="lower_background">
+            <div class="lower_nav wrapper">
+                <form action="">
+                    <div>
+                        <h3>stay updated</h3>
+                        <label for="email">Subscribe to our newsletter to stay updated.</label>
+                        <p class="sr-only">enter your email address</p>
+                        <input type="email" id="email" placeholder="email adderess">
+                        <button type="submit">subscribe</button>
+                    </div>
+                </form>
+                <div class="contact" id="contact">
+                    <h3>contact</h3>
+                    <p>info@email.com | 123-456-7890</p>
+                    <p>123 some road, Toronto, <span class="province">ON a5a 5a5</span>&nbsp Canada</p>
+                </div>
+                <div class="bottom_nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <p class="wrapper">Copyright ©️ 2019 <a href="https://www.junocollege.com">Juno College</a></p>
+    </footer>
 </body>
 </html>
