@@ -367,6 +367,7 @@ p {
   line-height: 1.45rem;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   width: 150px;
   padding: 10px;
 }
