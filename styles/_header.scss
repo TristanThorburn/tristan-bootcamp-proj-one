@@ -88,13 +88,53 @@ h1{
     filter:$white_icon_filter;
 }
 // MEDIA QUERIES*********************************************
+
+// NAV BARS**************************************************
+@media (min-width:1px) and (max-width:414px){
+    .desknavbar{
+        display:none;
+    }
+    .mobilenavbar{
+        display:flex;
+        justify-content:flex-end;
+
+        img{
+            margin-right:15px;
+            height:40px;
+            filter:$white_icon_filter;
+        }
+    }
+}
 @media (min-width:415px){
     .mobilenavbar{
         display:none;
     }
 }
-@media (min-width:1px) and (max-width:414px){
-    .desknavbar{
+// HEADER******************************************************
+@media (min-width: 1px) and (max-width:414px){
+    .facebook, .instagram, .snapchat, .twitter{
         display:none;
+    }
+    header{
+    height:60vh;
+    }
+    h1{
+        max-width:100%;
+        border:none;
+        .titleone{
+            font-size:$mobile_titile_one_size;
+        }
+    }
+}
+
+@media (min-width: 1px) and (max-width:390px){
+    h1{
+        font-size:$small_mobile_font_size;
+    }
+}
+
+@media (min-width:391px) and (max-width: 414px){
+    h1{
+        font-size:$large_mobile_font_size;
     }
 }
